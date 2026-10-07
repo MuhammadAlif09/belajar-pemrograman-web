@@ -1,79 +1,69 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurnal Belajar Pemrograman Web</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f6fb; color: #333; }
-        header { background: #1e3a8a; color: white; padding: 24px; text-align: center; }
-        /* menu navigasi atas */
-        nav { background: #2563eb; padding: 12px; text-align: center; position: sticky; top: 0; }
-        nav a { color: white; text-decoration: none; margin: 0 12px; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        main { max-width: 900px; margin: auto; padding: 20px; }
-        section { background: white; border-radius: 8px; padding: 16px 24px; margin-bottom: 20px; box-shadow: 0 2px 6px rgba(0,0,0,.1); }
-        section h2 { color: #1e3a8a; border-bottom: 2px solid #2563eb; padding-bottom: 6px; }
-        ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
-        li a { display: block; padding: 8px 14px; background: #e0e7ff; color: #1e3a8a; border-radius: 6px; text-decoration: none; }
-        li a:hover { background: #2563eb; color: white; }
-        footer { text-align: center; padding: 16px; color: #666; }
-    </style>
 </head>
+<style>
+    .menu {
+        background-color: blue;
+        padding: 12px
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
 <body>
-    <header>
-        <h1>Jurnal Belajar Pemrograman Web</h1>
-        <p>Kumpulan tugas &amp; latihan HTML tiap pertemuan</p>
-    </header>
+    <h1>Jurnal Belajar Pemrograman Web</h1>
+    <p class="menu">
+        <a href="#p3">pertemuan 3</a>
+        <a href="#p4">pertemuan 4</a>
+        <a href="#p5">pertemuan 5</a>
+    </p>
+    <hr>
+    <p>
+        Selamat datang di website saya. Website ini adalah web jurnal belajar saya dalam mempelajari pemrograman web. <br>
+        Klik link di bawah untuk melihat hasil belajar tiap pertemuan.
+    </p>
+    <hr>
 
-    <nav>
-        <a href="#lainnya">Pertemuan 3 &amp; Latihan</a>
-        <a href="#p4">Pertemuan 4</a>
-        <a href="#p5">Pertemuan 5</a>
-    </nav>
+    <h2 id="p3">Pertemuan 3 &amp; Latihan</h2>
+    <ul>
+        <li><a href="pertemuan3.html">Pertemuan 3</a></li>
+        <li><a href="format1.html">Format 1</a></li>
+        <li><a href="format2.html">Format 2</a></li>
+        <li><a href="format3.html">Format 3</a></li>
+        <li><a href="kutipan.html">Kutipan</a></li>
+        <li><a href="list.html">List</a></li>
+        <li><a href="gbr2.html">Gambar 2</a></li>
+        <li><a href="pertemuan4-gabungan.html">Pertemuan 4 Gabungan</a></li>
+        <li><a href="projek-toko.html">Projek Toko</a></li>
+    </ul>
 
-    <main>
-        <section id="lainnya">
-            <h2>Pertemuan 3 &amp; Latihan</h2>
-            <ul>
-                <li><a href="pertemuan3.html">Pertemuan 3</a></li>
-                <li><a href="format1.html">Format 1</a></li>
-                <li><a href="format2.html">Format 2</a></li>
-                <li><a href="format3.html">Format 3</a></li>
-                <li><a href="kutipan.html">Kutipan</a></li>
-                <li><a href="list.html">List</a></li>
-                <li><a href="gbr2.html">Gambar 2</a></li>
-                <li><a href="pertemuan4-gabungan.html">Pertemuan 4 Gabungan</a></li>
-                <li><a href="projek-toko.html">Projek Toko</a></li>
-            </ul>
-        </section>
+    <h2 id="p4">Pertemuan 4</h2>
+    <ul>
+        <li><a href="pertemuan%204/index.html">Home</a></li>
+        <li><a href="pertemuan%204/anchor.html">Anchor</a></li>
+        <li><a href="pertemuan%204/contact.html">Contact</a></li>
+        <li><a href="pertemuan%204/tentang.html">Tentang</a></li>
+        <li><a href="pertemuan%204/frame.html">Frame</a></li>
+        <li><a href="pertemuan%204/gbr.html">Gambar</a></li>
+        <li><a href="pertemuan%204/gbr2.html">Gambar 2</a></li>
+        <li><a href="pertemuan%204/java1.html">Java 1</a></li>
+        <li><a href="pertemuan%204/link.html">Link</a></li>
+        <li><a href="pertemuan%204/video.html">Video</a></li>
+    </ul>
 
-        <section id="p4">
-            <h2>Pertemuan 4</h2>
-            <ul>
-                <li><a href="pertemuan%204/index.html">Home</a></li>
-                <li><a href="pertemuan%204/anchor.html">Anchor</a></li>
-                <li><a href="pertemuan%204/contact.html">Contact</a></li>
-                <li><a href="pertemuan%204/tentang.html">Tentang</a></li>
-                <li><a href="pertemuan%204/frame.html">Frame</a></li>
-                <li><a href="pertemuan%204/gbr.html">Gambar</a></li>
-                <li><a href="pertemuan%204/gbr2.html">Gambar 2</a></li>
-                <li><a href="pertemuan%204/java1.html">Java 1</a></li>
-                <li><a href="pertemuan%204/link.html">Link</a></li>
-                <li><a href="pertemuan%204/video.html">Video</a></li>
-            </ul>
-        </section>
+    <h2 id="p5">Pertemuan 5</h2>
+    <ul>
+        <li><a href="pertemuan%205/elemen.html">Elemen</a></li>
+        <li><a href="pertemuan%205/tabel.html">Tabel</a></li>
+        <li><a href="pertemuan%205/gabung.html">Gabung</a></li>
+    </ul>
 
-        <section id="p5">
-            <h2>Pertemuan 5</h2>
-            <ul>
-                <li><a href="pertemuan%205/elemen.html">Elemen</a></li>
-                <li><a href="pertemuan%205/tabel.html">Tabel</a></li>
-                <li><a href="pertemuan%205/gabung.html">Gabung</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>Copyright &copy; 2026 Muhammad Alif. All rights reserved.</footer>
+    <hr>
+    <div> Copyright &copy; 2026. All rights reserved.</div>
 </body>
 </html>
