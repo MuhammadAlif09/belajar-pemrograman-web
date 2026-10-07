@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4 - Pemrograman Web</title>
+</head>
+<style>
+    .menu {
+        background-color: blue;
+        padding: 12px
+    }
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+    .galeri {
+        display: flex;
+        gap: 10px;
+    }
+    .galeri img {
+        width: 200px;
+        height: 150px;
+    }
+</style>
+<body>
+    <h1>Selamat Datang</h1>
+    <p class="menu">
+        <a href="index.html" title="Beranda">home</a>
+        <a href="contact.html" title="Kontak Kami">contact</a>
+        <a href="tentang.html" title="Tentang Kami">about</a>
+        <a href="frame.html" title="Frame">frame</a>
+        <a href="video.html" title="Video">video</a>
+    </p>
+    <hr>
+    <p>
+        Selamat datang di website saya. Website ini adalah web jurnal belajar saya dalam mempelajari pemrograman web. <br>
+        Di website ini, saya akan membagikan berbagai informasi dan pengalaman saya dalam mengembangkan aplikasi web. <br>
+        Semoga website ini bermanfaat bagi pengunjung. <br>
+        coba klik link di atas untuk mengunjungi halaman lain. <br>
+        di atas adalah contoh internal link, yaitu link yang mengarah ke halaman lain di dalam website yang sama. <br>
+    </p>
+    <hr>
+    <div> Copyright &copy; 2026. All rights reserved.</div>
+
+    <hr>
+    <h1>Link di HTML</h1>
+    <p>
+        <a href="index.html" title="Beranda">home</a>
+        <a href="contact.html" title="Kontak Kami">contact</a>
+        <a href="tentang.html" title="Tentang Kami">about</a>
+    </p>
+    <!-- link anchor -->
+    <p>
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools - HTML Links</a>
+    </p>
+    <hr>
+    <h1>Pertemuan 4 - Pemrograman Web - Link di HTML</h1>
+    <p> untuk lebih lengkap silahkan buka: <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools - HTML Links</a></p>
+    <p><a href="tentang.html">Tentang Kami</a></p>
+
+    <hr>
+    <h1>Apa itu Anchor?</h1>
+    <p>
+        Anchor adalah sebuah tag HTML yang digunakan untuk membuat tautan (link) <br>
+        ke halaman web lain atau ke bagian tertentu dari halaman web yang sama. <br>
+        Tag anchor ditandai dengan elemen <code>&lt;a&gt;</code> <br>
+        dan memiliki atribut <code>href</code> yang menentukan URL tujuan dari tautan tersebut.
+    </p>
+    <p>
+        Jangkar atau anchor juga dapat digunakan untuk membuat tautan ke bagian tertentu dari halaman web yang sama. <br>
+        Hal ini dilakukan dengan menambahkan atribut <code>id</code> pada elemen HTML yang ingin dituju, dan kemudian menambahkan tanda pagar (#) diikuti dengan nilai <code>id</code> pada atribut <code>href</code> dari tag anchor. <br>
+        Misalnya, jika kita memiliki elemen dengan <code>id="section1"</code>, kita dapat membuat tautan ke bagian tersebut dengan menambahkan <code>href="#section1"</code> pada tag anchor.
+    </p>
+    </P>
+    <h1>Contoh Penggunaan Anchor</h1>
+    <p>
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">W3Schools - HTML Links</a>
+    </p>
+    <h1></h1>
+
+    <hr>
+    <img src="https://picsum.photos/400/200" alt="gambar random" width="400" height="200" loading="lazy">
+
+    <hr>
+    <a href="#">Kembali</a>
+    <div class="galeri">
+        <img src="pertemuan 4/logo.png" alt="gambar 1">
+        <img src="pertemuan 4/logo.png" alt="gambar 2">
+        <img src="pertemuan 4/logo.png" alt="gambar 3">
+    </div>
+
+    <hr>
+    <a href="#">Kembali</a>
+    <hr>
+    <h1>W3 Schools</h1>
+    <video width="640" height="360" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+    <h1>Frame</h1>
+    <p>
+        <a href="index.html" title="Beranda">home</a>
+        <a href="contact.html" title="Kontak Kami">contact</a>
+        <a href="tentang.html" title="Tentang Kami">about</a>
+        <a href="frame.html" title="Frame">frame</a>
+    </p>
+    <hr>
+    <p>
+        <a href="https://polsri.web.id" target="myframe">link ke polsri</a>
+        <iframe name="myframe" width="700" height="400"></iframe>
+    </p>
+    <div> Copyright &copy; 2026. All rights reserved.</div>
+
+    <hr>
+    <h1>Contact Us</h1>
+    <p class="menu">
+        <a href="index.html" title="Beranda">home</a>
+        <a href="contact.html" title="Kontak Kami">contact</a>
+        <a href="tentang.html" title="Tentang Kami">about</a>
+        <a href="frame.html" title="Frame">frame</a>
+    </p>
+    <p>Anda bisa menghubungi saya di no WA: 08123456789 <br>
+       Atau anda juga bisa mengirim email ke: 
+       <a href="mhdalif091107@gmail.com">mhdalif091107@gmail.com</a> <br>
+       Anda juga bisa mengunjungi media sosial saya di Instagram: @username
+    </p>
+    <p>
+        jangan lupa follow juga page facebook saya di: <a href="https://www.facebook.com/Zenith0911" target="_blank">Zenith0911</a> <br>
+        dan juga follow akun twitter saya di: <a href="https://x.com/shirosama_77">@shirosama_77</a> <br>
+    </p>
+    <hr>
+    <div> Copyright &copy; 2026. All rights reserved.</div>
+
+    <hr>
+    <h1>Tentang Kami</h1>
+    <p>
+        <a href="index.html" title="Beranda">home</a>
+        <a href="contact.html" title="Kontak Kami">contact</a>
+        <a href="tentang.html" title="Tentang Kami">about</a>
+        <a href="frame.html" title="Frame">frame</a>
+    </p>
+    <hr>
+    <p>
+        Ini adalah halaman about dari web saya. <br>
+        dan ini adalah contoh cara membuat link internal di HTML. <br>
+    </p>
+    <hr>
+    <div> Copyright &copy; 2026. All rights reserved.</div>
+
+    <hr>
+    <p>
+        <a href="#" onclick="alert('Hello world')">Jalankan JS</a>
+        <br>
+        <a href="#" onmouseover="alert('Link sdh disentuh')">coba sentuh</a>
+    </p>
+</body>
+</html>
