@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="hasil.html" method="post">
+
+        <fieldset>
+            <legend><h3>Formulir Peserta</h3></legend>
+            <p>
+                <label> Nama Peserta</label>
+                <input type="text" name="nama" placeholder="input nama anda">
+            </p>
+            <p>
+                <label> User Name </label>
+                <input type="text" name="username" placeholder="input username">
+            </p>
+            <p>
+                <label> Password </label>
+                <input type="password" name="password" placeholder="input password">
+            </p>
+            <p>
+                <label> Jenis Kelamin </label>
+                <input type="radio" name="jenkel" value="Laki-laki">Laki-laki
+                <input type="radio" name="jenkel" value="Perempuan">Perempuan
+            </p>
+            <p>
+                <label>Tanggal Lahir</label>
+                <input type="date" name="tanggal">
+            </p>
+            <p>
+                <label>Agama :</label>
+                <select name="agama">
+                    <option value="budha">Budha</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="islam">Islam</option>
+                    <option value="katholik">Kristen Katholik</option>
+                    <option value="protestan">Kristen Protestan</option>
+                </select>
+            </p>
+            <p>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="masukkan email">
+            </p>
+            <p>
+                <label>Pilih Course :</label>
+                <input type="checkbox" name="web native">Web Native
+                <input type="checkbox" name="web framework">Web Framework
+                <input type="checkbox" name="Mobile Native">Mobile Native
+                <input type="checkbox" name="Mobile">Mobile lintas platform
+            </p>
+            <p>
+                <p>Alamat</p>
+                <textarea name="alamat" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+                <!--<input type="submit" name="submit" value="daftar" > -->
+                <button type="submit">Kirim</button>
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
+

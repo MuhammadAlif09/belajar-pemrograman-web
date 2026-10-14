@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Pasien Rumah Sakit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f7f4;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #ffffff;
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #b5d5c5;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a643b;
+        }
+
+        fieldset {
+            border: 1px solid #99c2a9;
+            border-radius: 5px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a643b;
+            padding: 0 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="file"] {
+            margin-top: 5px;
+            padding: 5px 0;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #1a643b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 25px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #145230;
+        }
+
+        input[type="reset"] {
+            background-color: #718096;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 10px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="proses-pasien.php" method="post" enctype="multipart/form-data">
+        <h2>FORMULIR REGISTRASI PASIEN RUMAH SAKIT</h2>
+        <p align="center">Silakan lengkapi formulir pendaftaran pasien baru / rawat jalan di bawah ini:</p>
+
+        <!-- FIELDSET 1: DATA IDENTITAS PASIEN -->
+        <fieldset>
+            <legend>Data Identitas Pasien</legend>
+
+            <p>
+                <label>Nomor Induk Kependudukan (NIK) :</label>
+                <input type="text" name="nik" maxlength="16" placeholder="Masukkan 16 digit NIK KTP..." required>
+            </p>
+
+            <p>
+                <label>Nama Lengkap Pasien :</label>
+                <input type="text" name="nama_pasien" placeholder="Masukkan nama lengkap pasien..." required>
+            </p>
+
+            <p>
+                <label>Tempat Lahir :</label>
+                <input type="text" name="tempat_lahir" placeholder="Kota / tempat lahir...">
+            </p>
+
+            <p>
+                <label>Tanggal Lahir :</label>
+                <input type="date" name="tanggal_lahir" required>
+            </p>
+
+            <p>
+                <label>Usia (Tahun) :</label>
+                <input type="number" name="usia" min="0" max="120" placeholder="Masukkan usia...">
+            </p>
+
+            <p class="radio-group">
+                <label>Jenis Kelamin :</label><br>
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+            </p>
+
+            <p class="radio-group">
+                <label>Golongan Darah :</label><br>
+                <label><input type="radio" name="golongan_darah" value="A"> A</label>
+                <label><input type="radio" name="golongan_darah" value="B"> B</label>
+                <label><input type="radio" name="golongan_darah" value="AB"> AB</label>
+                <label><input type="radio" name="golongan_darah" value="O"> O</label>
+                <label><input type="radio" name="golongan_darah" value="Tidak Tahu"> Belum Tahu</label>
+            </p>
+
+            <p>
+                <label>Agama :</label>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen Protestan</option>
+                    <option value="katolik">Kristen Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                    <option value="konghucu">Konghucu</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Nomor HP / WhatsApp :</label>
+                <input type="text" name="telepon" placeholder="Contoh: 081234567890" required>
+            </p>
+
+            <p>
+                <label>Email :</label>
+                <input type="email" name="email" placeholder="Contoh: nama@gmail.com">
+            </p>
+
+            <p>
+                <label>Alamat Lengkap Domisili :</label>
+                <textarea name="alamat" rows="4" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kota..."></textarea>
+            </p>
+        </fieldset>
+
+        <!-- FIELDSET 2: INFORMASI KUNJUNGAN & MEDIS -->
+        <fieldset>
+            <legend>Informasi Kunjungan &amp; Layanan Medis</legend>
+
+            <p>
+                <label>Tanggal Rencana Berobat :</label>
+                <input type="date" name="tgl_kunjungan" required>
+            </p>
+
+            <p>
+                <label>Poliklinik Tujuan (Dokter Spesialis) :</label>
+                <select name="poli_tujuan" required>
+                    <option value="">-- Pilih Poliklinik --</option>
+                    <option value="umum">Poli Umum</option>
+                    <option value="gigi">Poli Gigi &amp; Mulut</option>
+                    <option value="anak">Poli Anak (Pediatri)</option>
+                    <option value="penyakit_dalam">Poli Penyakit Dalam (Internis)</option>
+                    <option value="mata">Poli Mata</option>
+                    <option value="tht">Poli THT</option>
+                    <option value="kebidanan">Poli Kebidanan &amp; Kandungan</option>
+                </select>
+            </p>
+
+            <p class="radio-group">
+                <label>Jenis Penjamin / Pembayaran :</label><br>
+                <label><input type="radio" name="penjamin" value="BPJS Kesehatan" required> BPJS Kesehatan</label>
+                <label><input type="radio" name="penjamin" value="Umum / Mandiri"> Pasien Umum / Mandiri</label>
+                <label><input type="radio" name="penjamin" value="Asuransi Swasta"> Asuransi Swasta</label>
+            </p>
+
+            <p class="checkbox-group">
+                <label>Riwayat Penyakit Sebelumnya (Bisa pilih lebih dari satu) :</label><br>
+                <label><input type="checkbox" name="riwayat[]" value="Hipertensi"> Hipertensi (Darah Tinggi)</label>
+                <label><input type="checkbox" name="riwayat[]" value="Diabetes"> Diabetes (Kencing Manis)</label>
+                <label><input type="checkbox" name="riwayat[]" value="Asma"> Asma</label>
+                <label><input type="checkbox" name="riwayat[]" value="Jantung"> Penyakit Jantung</label>
+                <label><input type="checkbox" name="riwayat[]" value="Alergi Obat"> Alergi Obat / Makanan</label>
+                <label><input type="checkbox" name="riwayat[]" value="Tidak Ada"> Tidak Ada</label>
+            </p>
+
+            <p>
+                <label>Keluhan Utama / Gejala yang Dirasakan :</label>
+                <textarea name="keluhan" rows="4" placeholder="Jelaskan secara singkat gejala atau keluhan penyakit..."></textarea>
+            </p>
+
+            <p>
+                <label>Unggah Berkas Identitas (Foto KTP / Kartu BPJS / Surat Rujukan) :</label><br>
+                <input type="file" name="berkas_pasien" accept=".pdf,.jpg,.jpeg,.png">
+            </p>
+        </fieldset>
+
+        <!-- FIELDSET 3: PERSETUJUAN & SUBMIT -->
+        <fieldset>
+            <legend>Persetujuan &amp; Konfirmasi</legend>
+
+            <p>
+                <label>
+                    <input type="checkbox" name="setuju" value="ya" required>
+                    Saya menyatakan bahwa data yang diisikan di atas adalah benar dan sesuai dengan kondisi pasien.
+                </label>
+            </p>
+
+            <p align="center">
+                <input type="submit" name="submit" value="Daftar Pasien">
+                <input type="reset" name="reset" value="Reset Formulir">
+            </p>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+
