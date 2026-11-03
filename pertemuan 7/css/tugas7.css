@@ -1,0 +1,92 @@
+/* CSS RESET & STYLE DASAR */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* ----------------------------------- */
+        /* 1. SELECTOR ID (Menggunakan tanda #) */
+        /* ----------------------------------- */
+        #header-utama {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        #btn-tema {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #f39c12;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #btn-tema:hover {
+            background-color: #d35400;
+        }
+
+        #footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* --------------------------------------- */
+        /* 2. SELECTOR CLASS (Menggunakan tanda .) */
+        /* --------------------------------------- */
+        .kartu {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .teks-sorot {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .tombol-baca {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .tombol-baca:hover {
+            background-color: #2980b9;
+        }
+
+        /* Kelas bantuan untuk menyembunyikan elemen */
+        .tersembunyi {
+            display: none;
+        }
+
+        /* --------------------------------------- */
+        /* 3. TEMA GELAP (Mode Dark)               */
+        /* --------------------------------------- */
+        body.mode-gelap {
+            background-color: #1a1a1a;
+            color: #f4f4f9;
+        }
+
+        body.mode-gelap .kartu {
+            background-color: #2d2d2d;
+            border-color: #444;
+        }

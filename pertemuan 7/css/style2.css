@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: aliceblue;
+}
+
+#header-utama{
+    background-color: rgb(46, 46, 156);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#footer{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+    background-color: aqua;
+    border-radius: 6px;
+}
+
+.inidiv{
+    background-color: white;
+    border: 1px solid red;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+.teks-sorot{
+    color: red;
+    font-weight: bold;
+}
+
+.tombol{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.halaman{
+    margin-top: 20px;
+    display: inline-block;
+    background-color: lightblue;
+    color: black;
+    padding: 4px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+}
